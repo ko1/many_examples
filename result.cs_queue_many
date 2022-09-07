@@ -1,0 +1,117 @@
+irb(main):001:0> 1000.step(by: 3000, to: 60_000){|i| system("~/ruby/v3/install/master/bin/ruby c.rb #{i} 1"); sleep 3}
+                                     user     system      total        real
+Connect 1000                     0.073963   0.023049   0.097012 (  0.190899)
+Get ack from 1000 conn           0.000566   0.009756   0.010322 (  0.017855)
+Put to a socket                  0.000047   0.000018   0.000065 (  0.000065)
+Get from 1000 connections        0.006971   0.000000   0.006971 (  0.007309)
+Put 100 msg and recv             0.180299   0.421754   0.602053 (  0.757038)
+                                     user     system      total        real
+Connect 4000                     0.146361   0.114719   0.261080 (  1.050717)
+Get ack from 4000 conn           0.014702   0.002817   0.017519 (  0.017592)
+Put to a socket                  0.000021   0.000013   0.000034 (  0.000033)
+Get from 4000 connections        0.007435   0.017790   0.025225 (  0.043234)
+Put 100 msg and recv             0.642727   1.442110   2.084837 (  4.529612)
+                                     user     system      total        real
+Connect 7000                     0.184770   0.132832   0.317602 (  1.870844)
+Get ack from 7000 conn           0.014481   0.006707   0.021188 (  0.021231)
+Put to a socket                  0.000020   0.000013   0.000033 (  0.000033)
+Get from 7000 connections        0.008645   0.020898   0.029543 (  0.054845)
+Put 100 msg and recv             1.023303   2.637691   3.660994 (  8.767155)
+                                     user     system      total        real
+Connect 10000                    0.331736   0.230540   0.562276 (  2.176333)
+Get ack from 10000 conn          0.017338   0.014802   0.032140 (  0.032402)
+Put to a socket                  0.000019   0.000013   0.000032 (  0.000033)
+Get from 10000 connections       0.027438   0.023058   0.050496 (  0.131525)
+Put 100 msg and recv             1.545917   3.429616   4.975533 ( 12.236545)
+                                     user     system      total        real
+Connect 13000                    0.484052   0.363405   0.847457 (  4.678108)
+Get ack from 13000 conn          0.016514   0.016456   0.032970 (  0.033016)
+Put to a socket                  0.000000   0.000540   0.000540 (  0.000571)
+Get from 13000 connections       0.023318   0.039311   0.062629 (  0.143700)
+Put 100 msg and recv             1.953720   4.520434   6.474154 ( 16.420569)
+                                     user     system      total        real
+Connect 16000                    0.523694   0.378538   0.902232 (  3.941577)
+Get ack from 16000 conn          0.015956   0.040918   0.056874 (  0.057052)
+Put to a socket                  0.000018   0.000014   0.000032 (  0.000032)
+Get from 16000 connections       0.024446   0.041051   0.065497 (  0.139808)
+Put 100 msg and recv             2.250901   5.319488   7.570389 ( 20.813762)
+                                     user     system      total        real
+Connect 19000                    0.623100   0.378330   1.001430 (  4.329134)
+Get ack from 19000 conn          0.043417   0.021505   0.064922 (  0.074397)
+Put to a socket                  0.000052   0.000030   0.000082 (  0.000089)
+Get from 19000 connections       0.036220   0.046014   0.082234 (  0.158816)
+Put 100 msg and recv             3.057432   6.667718   9.725150 ( 24.744480)
+                                     user     system      total        real
+Connect 22000                    0.755723   0.506040   1.261763 (  5.167995)
+Get ack from 22000 conn          0.040694   0.024570   0.065264 (  0.065488)
+Put to a socket                  0.000019   0.000012   0.000031 (  0.000031)
+Get from 22000 connections       0.046757   0.039902   0.086659 (  0.228320)
+Put 100 msg and recv             3.162696   5.335043   8.497739 ( 28.997294)
+                                     user     system      total        real
+Connect 25000                    0.856126   0.560981   1.417107 (  4.191248)
+Get ack from 25000 conn          0.026585   0.064841   0.091426 (  0.170186)
+Put to a socket                  0.000030   0.000020   0.000050 (  0.000049)
+Get from 25000 connections       0.038597   0.049479   0.088076 (  0.210475)
+Put 100 msg and recv             3.598678   5.871354   9.470032 ( 32.483673)
+                                     user     system      total        real
+Connect 28000                    0.909055   0.538631   1.447686 (  4.424030)
+Get ack from 28000 conn          0.044980   0.054332   0.099312 (  0.143195)
+Put to a socket                  0.000030   0.000018   0.000048 (  0.000050)
+Get from 28000 connections       0.034188   0.068575   0.102763 (  0.249390)
+Put 100 msg and recv             4.472114  10.031826  14.503940 ( 37.142785)
+                                     user     system      total        real
+Connect 31000                    1.025135  11.611797  12.636932 ( 17.424024)
+Get ack from 31000 conn          0.045085   0.047091   0.092176 (  0.092352)
+Put to a socket                  0.000003   0.000030   0.000033 (  0.000033)
+Get from 31000 connections       0.045392   0.075085   0.120477 (  0.280701)
+Put 100 msg and recv             4.327305   8.103250  12.430555 ( 41.811438)
+                                     user     system      total        real
+Connect 34000                    1.450854  23.917954  25.368808 ( 30.868283)
+Get ack from 34000 conn          0.044420   0.059074   0.103494 (  0.105185)
+Put to a socket                  0.000003   0.000033   0.000036 (  0.000035)
+Get from 34000 connections       0.027948   0.107396   0.135344 (  0.297324)
+Put 100 msg and recv             4.952907  11.867278  16.820185 ( 43.881173)
+                                     user     system      total        real
+Connect 37000                    1.849766  36.982590  38.832356 ( 50.380400)
+Get ack from 37000 conn          0.040127   0.072269   0.112396 (  0.114040)
+Put to a socket                  0.000005   0.000087   0.000092 (  0.000096)
+Get from 37000 connections       0.061571   0.108220   0.169791 (  0.617537)
+Put 100 msg and recv             5.146923   9.478929  14.625852 ( 48.605577)
+                                     user     system      total        real
+Connect 40000                    1.834214  49.083752  50.917966 ( 59.744163)
+Get ack from 40000 conn          0.072098   0.047052   0.119150 (  0.119475)
+Put to a socket                  0.000001   0.000031   0.000032 (  0.000032)
+Get from 40000 connections       0.056820   0.097684   0.154504 (  0.342986)
+Put 100 msg and recv             6.178903  14.209414  20.388317 ( 53.978498)
+                                     user     system      total        real
+Connect 43000                    2.250888  61.419202  63.670090 ( 76.103813)
+Get ack from 43000 conn          0.056096   0.077455   0.133551 (  0.133808)
+Put to a socket                  0.000001   0.000028   0.000029 (  0.000029)
+Get from 43000 connections       0.053231   0.107087   0.160318 (  0.392032)
+Put 100 msg and recv             5.664765  10.929321  16.594086 ( 55.329485)
+                                     user     system      total        real
+Connect 46000                    2.234364  76.632593  78.866957 ( 89.095435)
+Get ack from 46000 conn          0.080482   0.064330   0.144812 (  0.145714)
+Put to a socket                  0.000001   0.000040   0.000041 (  0.000044)
+Get from 46000 connections       0.084657   0.089313   0.173970 (  0.389568)
+Put 100 msg and recv             6.163496  11.500263  17.663759 ( 59.674384)
+                                     user     system      total        real
+Connect 49000                    3.008908  89.959968  92.968876 (101.793761)
+Get ack from 49000 conn          0.099892   0.058057   0.157949 (  0.259637)
+Put to a socket                  0.000002   0.000070   0.000072 (  0.000072)
+Get from 49000 connections       0.080085   0.095288   0.175373 (  0.312349)
+Put 100 msg and recv             7.793283  16.215717  24.009000 ( 60.215142)
+                                     user     system      total        real
+Connect 52000                    3.088306 102.493183 105.581489 (118.716858)
+Get ack from 52000 conn          0.087969   0.086629   0.174598 (  0.176532)
+Put to a socket                  0.000001   0.000036   0.000037 (  0.000038)
+Get from 52000 connections       0.101093   0.141460   0.242553 (  0.445343)
+Put 100 msg and recv             6.445006  12.643072  19.088078 ( 68.303325)
+                                     user     system      total        real
+Connect 55000                    3.375480 116.360809 119.736289 (134.724552)
+Get ack from 55000 conn          0.087773   0.092796   0.180569 (  0.181069)
+Put to a socket                  0.000001   0.000028   0.000029 (  0.000029)
+Get from 55000 connections       0.052338   0.143712   0.196050 (  0.460711)
+Put 100 msg and recv             8.260862  19.179773  27.440635 ( 71.010368)
+                                     user     system      total        real
+Connect 58000                  trying to make 56501th
